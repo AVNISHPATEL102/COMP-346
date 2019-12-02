@@ -1,0 +1,4 @@
+Task 4
+If we used "Notify" instead of "NotifyAll" this would cause starvation, due to the arbitrary call to a yielded thread. 
+So the possibility that a certain thread does not get called over and over is plausible, but as you can see, using the "NotifyAll" call, 
+will notify any thread that is waiting and give them all a fair chance to enter the critical section. 
